@@ -21,7 +21,7 @@ namespace ZuneRichPresence
         public string previousSong;
         public int ZuseLength;
         DiscordControl DiscordControl = new DiscordControl();
-        Form1 form1 = new Form1();
+        
 
         public void SendSongInfo()
         {
@@ -52,7 +52,7 @@ namespace ZuneRichPresence
                     //SendLastFM.Start(ZuneArtist, ZuneTrack, ZuneAlbum, ZuneId, ZuseLength, ZuneFilename);
                     DiscordControl.Init();
                     DiscordControl.ChangeStatus(ZuneArtist, ZuneTrack, ZuneAlbum);
-                    form1.changeInfo(ZuneArtist, ZuneTrack, ZuneAlbum);
+                    //form1.changeInfo(ZuneArtist, ZuneTrack, ZuneAlbum);
                     
                 }
             }
